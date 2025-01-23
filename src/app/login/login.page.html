@@ -5,27 +5,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item>
-    <ion-input label="Usuario" labelPlacement="stacked" placeholder="Ingresar texto"></ion-input>
-  </ion-item>
+  <form
+  #Amber="ngForm" (ngSubmit)="login(Amber)">
 
   <ion-input
-  type="email"
-  fill="solid"
-  label="Email"
-  labelPlacement="floating"
-  helperText="Enter a valid email"
-  errorText="Invalid email"
-  ngModel
-  email
-></ion-input>
+  name="email" [(ngModel)]="email"
+  label="Correo electronico"
+  label-placement="floating" fill="outline"
+  placeholder="Ingresa tu correo" type="email" required=" {alert} Debes de llenar este campo">  </ion-input>
 
-<ion-item>
-  <ion-input label="Contraseña" type="password" value=""></ion-input>
-</ion-item>
+  <ion-input name="password" [(ngModel)]="password"
+  label="Contraseña" label-placement="floating" fill="outline"
+  placeholder="Ingresa tu Contraseña" type="password" required=" {alert} Debes de llenar este campo"> </ion-input>
 
-<ion-button expand="block" routerLink="/Inicio">
-  Ingresar
-</ion-button>
+  <ion-button type="submit" color="light">Emviar</ion-button>
+</form>
 
 </ion-content>
