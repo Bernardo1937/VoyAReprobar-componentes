@@ -28,13 +28,14 @@ export class LoginPage implements OnInit {
     console.log('valid: ',form.valid);
 
     if(form.invalid){
-      console.log("Todos los campos son requeridos")
+      console.log("Todos los campos son requeridos");
+      return;
+    } 
+
+    if (this.email === 'admin' && this.password === 'admin'){
+      console.log("login correcto");
     } else {
-      console.log("Login incorrecto")
-    }
-
-    if (this.email === ''){
-
+      console.log("login Correcto")
     }
   }
 
