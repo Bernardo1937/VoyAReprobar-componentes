@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Usuario" labelPlacement="stacked" placeholder="Ingresar texto"></ion-input>
+  </ion-item>
+
+  <ion-input
+  type="email"
+  fill="solid"
+  label="Email"
+  labelPlacement="floating"
+  helperText="Enter a valid email"
+  errorText="Invalid email"
+  ngModel
+  email
+></ion-input>
+
+<ion-item>
+  <ion-input label="Contraseña" type="password" value=""></ion-input>
+</ion-item>
+
+<ion-button expand="block" routerLink="/Inicio">
+  Ingresar
+</ion-button>
+
+</ion-content>
