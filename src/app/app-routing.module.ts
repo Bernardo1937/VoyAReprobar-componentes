@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'toggle',
     loadChildren: () => import('./toggle/toggle.module').then( m => m.TogglePageModule)
   },
+  {
+    path: 'alerts',
+    loadChildren: () => import('./alerts/alerts.module').then( m => m.AlertsPageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+  },
 ];
 
 @NgModule({

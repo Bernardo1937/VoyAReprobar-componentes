@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/Inicio"></ion-back-button>
+    </ion-buttons>
+    
+
+    <ion-title>Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar mode="ios" color="success"></ion-searchbar>
+  <ion-searchbar mode="ios" color="warning" minlength="number" placeholder="Ejamplo de que escribir"></ion-searchbar>
+  <ion-searchbar mode="ios" color="danger" disabled="true" placeholder="No deja escribir"></ion-searchbar>
+  <ion-searchbar mode="ios" color="medium" value="Reprobado"></ion-searchbar>
+  <ion-searchbar mode="ios" color="tertiary" animated="true" placeholder="Animado"></ion-searchbar>
+</ion-content>

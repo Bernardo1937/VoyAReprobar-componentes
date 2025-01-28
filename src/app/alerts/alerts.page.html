@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/Inicio"></ion-back-button>
+    </ion-buttons>
+    
+
+    <ion-title>alerts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-button mode="ios" color="success" id="present-alert">Click Me</ion-button>
+
+<ion-alert  mode="ios"
+  trigger="present-alert"
+  header="Prueba UwU"
+  subHeader="subprueba"
+  message="voy a reprobar."
+></ion-alert>
+
+<ion-button id="open-loading" mode="ios" color="warning">ver carga</ion-button>
+<ion-loading trigger="open-loading" message="una eternidad mas tarde..." duration="3000"></ion-loading>
+
+
+</ion-content>
